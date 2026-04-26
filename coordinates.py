@@ -40,7 +40,7 @@ if mode not in ["cartesian", "gps"]:
     exit()
 
 # Dynamic labels for cleaner code
-label = "x, y)" if mode == "cartesian" else "(latitude, longitude)"
+label = "(x, y)" if mode == "cartesian" else "(latitude, longitude)"
 unit = "" if mode == "cartesian" else " km"
 
 # Input origin
