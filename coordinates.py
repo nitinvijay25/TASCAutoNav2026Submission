@@ -48,8 +48,12 @@ print(f"Enter your origin point {label}:")
 origin = tuple(map(float, input().split()))
 
 # Input number of points
-print("Enter the number of points to compare:")
+print("Enter the number of points to compare (5-10):")
 num_points = int(input())
+if num_points < 5 or num_points > 10:
+    print("Invalid number of points. Please choose between 5-10.")
+    exit()
+
 points = []
 
 # Input each point
